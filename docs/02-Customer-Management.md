@@ -2,39 +2,40 @@
 
 ## Overview
 
-Customer management is a core feature of the DFS Dashboard Portal that allows you to register, manage, and monitor customer accounts and their financial activities.
+Customer management is a core feature of the DFS Dashboard Portal that allows you to monitor and manage customer accounts that have self-registered through the system. Customers register themselves and are automatically approved, with manual review and approval processes available for later phases.
 
-## Customer Registration Process
+## Customer Self-Registration Process
 
-### Step 1: Access Customer Management
+### Step 1: Customer Self-Registration
 
-1. Navigate to the main dashboard
-2. Click on "Customers" in the sidebar menu
-3. You'll see the customer list and management interface
-
-### Step 2: Add New Customer
-
-1. Click the "Add Customer" button
-2. Fill in the required information:
+1. **Customer Access**: Customers access the registration portal directly
+2. **Self-Registration Form**: Customers fill out their own information:
    - **Personal Information**: First name, last name, date of birth
    - **Contact Details**: Phone number, email address
    - **Address**: Street address, city, state, postal code
    - **Identification**: ID number, ID type (passport, driver's license, etc.)
    - **Financial Information**: Bank account details, income information
 
-### Step 3: Document Upload
+### Step 2: Document Self-Upload
 
-1. **ID Verification**: Upload government-issued ID
-2. **Proof of Address**: Upload utility bill or bank statement
-3. **Income Verification**: Upload salary slip or bank statement
+1. **ID Verification**: Customer uploads government-issued ID
+2. **Proof of Address**: Customer uploads utility bill or bank statement
+3. **Income Verification**: Customer uploads salary slip or bank statement
 4. **Additional Documents**: Any other required documentation
 
-### Step 4: Verification Process
+### Step 3: Automatic Approval Process
 
-1. **Automatic Verification**: System checks document authenticity
-2. **Manual Review**: Staff reviews uploaded documents
-3. **Approval/Rejection**: Customer account is approved or rejected
-4. **Notification**: Customer receives status update
+1. **Auto-Verification**: System automatically checks document authenticity
+2. **Auto-Approval**: Customer account is automatically approved upon successful verification
+3. **Account Activation**: Customer can immediately start using the system
+4. **Notification**: Customer receives confirmation of successful registration
+
+### Step 4: Post-Registration Review (Future Phases)
+
+1. **Manual Review Queue**: Staff can review auto-approved customers
+2. **Status Updates**: Manual approval or rejection if needed
+3. **Account Modifications**: Staff can modify customer status if issues are found
+4. **Follow-up Actions**: Additional verification or documentation requests
 
 ## Customer Profile Management
 
@@ -48,6 +49,7 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
    - Account status and balance
    - Device associations
    - Document verification status
+   - Registration method (self-registered)
 
 ### Editing Customer Information
 
@@ -59,10 +61,11 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
 
 ### Customer Status Management
 
-- **Active**: Customer can perform transactions
+- **Active**: Customer can perform transactions (auto-approved)
+- **Under Review**: Manual review in progress
 - **Suspended**: Temporary restriction on transactions
 - **Blocked**: Complete restriction on account
-- **Pending**: Awaiting verification or approval
+- **Rejected**: Failed manual review (future phase)
 
 ## Customer Search and Filtering
 
@@ -75,10 +78,11 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
 
 ### Filter Options
 
-- **Status**: Active, suspended, blocked, pending
+- **Status**: Active, under review, suspended, blocked, rejected
 - **Registration Date**: Filter by registration period
 - **Location**: Filter by city or region
 - **Transaction Volume**: Filter by transaction activity
+- **Registration Type**: Self-registered vs manually added
 
 ## Transaction Monitoring
 
@@ -120,10 +124,11 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
 
 ### KYC (Know Your Customer)
 
-- **Identity Verification**: Government ID verification
-- **Address Verification**: Proof of residence
-- **Risk Assessment**: Customer risk profiling
+- **Identity Verification**: Government ID verification (automated)
+- **Address Verification**: Proof of residence (automated)
+- **Risk Assessment**: Customer risk profiling (automated)
 - **Ongoing Monitoring**: Continuous compliance checks
+- **Manual Review**: Staff review for high-risk customers
 
 ### Data Protection
 
@@ -136,10 +141,11 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
 
 ### Customer Reports
 
-- **Registration Reports**: New customer registrations
+- **Registration Reports**: New self-registered customers
 - **Activity Reports**: Customer transaction activity
 - **Compliance Reports**: KYC and verification status
 - **Performance Reports**: Customer engagement metrics
+- **Auto-Approval Reports**: Success rate of automatic approvals
 
 ### Export Options
 
@@ -150,12 +156,12 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
 
 ## Best Practices
 
-### Customer Onboarding
+### Customer Self-Registration
 
-1. **Clear Communication**: Explain process and requirements
-2. **Documentation**: Ensure all required documents are uploaded
-3. **Verification**: Thoroughly verify customer information
-4. **Approval**: Timely approval or rejection with explanation
+1. **Clear Instructions**: Provide clear registration guidelines
+2. **Documentation**: Ensure customers understand required documents
+3. **Auto-Verification**: Maintain high accuracy in automatic verification
+4. **User Experience**: Streamlined registration process
 
 ### Ongoing Management
 
@@ -163,6 +169,7 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
 2. **Proactive Support**: Address issues before they escalate
 3. **Communication**: Keep customers informed of changes
 4. **Compliance**: Maintain regulatory compliance
+5. **Review Process**: Establish efficient manual review procedures
 
 ### Data Quality
 
@@ -175,8 +182,8 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
 
 ### Common Issues
 
-1. **Registration Failures**: Check document quality and completeness
-2. **Verification Delays**: Review verification queue and staffing
+1. **Registration Failures**: Check document quality and system verification settings
+2. **Auto-Approval Issues**: Review verification algorithms and thresholds
 3. **Transaction Issues**: Verify customer account status
 4. **Data Synchronization**: Check API connectivity and data flow
 
@@ -187,3 +194,19 @@ Customer management is a core feature of the DFS Dashboard Portal that allows yo
 3. **Documentation**: Document all support interactions
 4. **Resolution**: Ensure issue is fully resolved
 5. **Follow-up**: Verify customer satisfaction
+
+## Future Phases
+
+### Manual Review Implementation
+
+1. **Review Queue**: Establish manual review workflow
+2. **Approval Process**: Implement manual approval/rejection system
+3. **Risk Assessment**: Enhanced risk profiling for manual review
+4. **Compliance Monitoring**: Advanced compliance checking
+
+### Enhanced Verification
+
+1. **Biometric Verification**: Fingerprint or facial recognition
+2. **Advanced Document Verification**: Enhanced document authenticity checks
+3. **Real-time Verification**: Instant verification with government databases
+4. **Multi-factor Authentication**: Additional security measures

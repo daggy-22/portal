@@ -2,7 +2,15 @@
 
 ## Overview
 
-Device management is a critical component that handles the registration, monitoring, and maintenance of payment devices used in the DFS system. This includes POS terminals, mobile payment devices, and other payment hardware.
+Device management is a critical component that allows administrators to register, monitor, and maintain payment devices used in the DFS system. Admins can access device management through the sidebar menu and perform comprehensive device operations including adding new devices, editing existing ones, and updating device status.
+
+## Accessing Device Management
+
+### Step 1: Navigate to Devices
+
+1. **Sidebar Menu**: Click on "Devices" in the main sidebar menu
+2. **Device Dashboard**: You'll see the device management interface
+3. **Device List**: View all registered devices in the system
 
 ## Device Types
 
@@ -21,32 +29,146 @@ Device management is a critical component that handles the registration, monitor
 - **Barcode Scanners**: Product scanning devices
 - **Cash Drawers**: Secure cash storage units
 
-## Device Registration Process
+## Adding New Devices
 
-### Step 1: Device Information Entry
+### Step 1: Access Add Device Form
 
-1. **Device Type**: Select device category and model
-2. **Serial Number**: Enter unique device serial number
-3. **Manufacturer**: Specify device manufacturer
-4. **Model Number**: Enter device model number
-5. **Firmware Version**: Current firmware version
-6. **Hardware Specifications**: Device capabilities and features
+1. **Device Dashboard**: Navigate to the Devices page
+2. **Add Device Button**: Click "Add Device" button
+3. **Device Form**: Fill in the required device information
 
-### Step 2: Location Assignment
+### Step 2: Device Information Entry
 
-1. **Merchant Assignment**: Assign device to specific merchant
-2. **Location Details**: Enter physical location address
-3. **Installation Date**: Record device installation date
-4. **Contact Person**: Assign responsible contact person
-5. **Operating Hours**: Set device operating schedule
+1. **Basic Information**:
 
-### Step 3: Configuration
+   - **Device Name**: Enter descriptive device name
+   - **Brand**: Select device brand/manufacturer
+   - **Model**: Enter device model number
+   - **Device Type**: Select device category
+   - **Serial Number**: Enter unique device serial number
 
-1. **Network Settings**: Configure network connectivity
-2. **Payment Gateway**: Set up payment processing gateway
-3. **Security Settings**: Configure security parameters
-4. **Communication Protocol**: Set up communication protocols
-5. **Backup Configuration**: Configure backup systems
+2. **Pricing Information**:
+
+   - **Minimum Price**: Set minimum transaction amount
+   - **Maximum Price**: Set maximum transaction amount
+   - **Rental Price**: Set device rental cost (if applicable)
+   - **Purchase Price**: Set device purchase cost
+
+3. **Device Details**:
+
+   - **Description**: Enter device description
+   - **Features**: List device capabilities
+   - **Specifications**: Technical specifications
+   - **Warranty**: Warranty information
+
+4. **Media Upload**:
+   - **Device Image**: Upload device photo
+   - **Documentation**: Upload device manuals/documents
+   - **Certificates**: Upload compliance certificates
+
+### Step 3: Location and Assignment
+
+1. **Location Details**:
+
+   - **Merchant Assignment**: Assign to specific merchant
+   - **Physical Address**: Enter device location
+   - **Installation Date**: Set installation date
+   - **Contact Person**: Assign responsible contact
+
+2. **Configuration**:
+   - **Network Settings**: Configure connectivity
+   - **Payment Gateway**: Set payment processing
+   - **Security Settings**: Configure security parameters
+
+### Step 4: Save and Activate
+
+1. **Review Information**: Verify all entered data
+2. **Save Device**: Click "Save Device" button
+3. **Activation**: Device is automatically activated
+4. **Confirmation**: Receive confirmation message
+
+## Editing Existing Devices
+
+### Step 1: Access Device for Editing
+
+1. **Device List**: Navigate to the device list
+2. **Edit Button**: Click "Edit" next to the device
+3. **Edit Form**: Modify device information
+
+### Step 2: Update Device Information
+
+1. **Basic Details**:
+
+   - **Device Name**: Update device name
+   - **Brand**: Change device brand
+   - **Model**: Update model information
+   - **Description**: Modify device description
+
+2. **Pricing Updates**:
+
+   - **Minimum Price**: Adjust minimum transaction amount
+   - **Maximum Price**: Adjust maximum transaction amount
+   - **Rental Price**: Update rental cost
+   - **Purchase Price**: Update purchase cost
+
+3. **Media Updates**:
+
+   - **Device Image**: Upload new device photo
+   - **Documents**: Update device documentation
+   - **Certificates**: Update compliance certificates
+
+4. **Configuration Changes**:
+   - **Location**: Update device location
+   - **Merchant Assignment**: Reassign to different merchant
+   - **Settings**: Modify device settings
+
+### Step 3: Save Changes
+
+1. **Review Changes**: Verify all modifications
+2. **Save Updates**: Click "Save Changes" button
+3. **Confirmation**: Receive update confirmation
+
+## Device Status Management
+
+### Available Status Options
+
+- **Active**: Device is operational and processing transactions
+- **Inactive**: Device is temporarily disabled
+- **Maintenance**: Device is under maintenance
+- **Retired**: Device is no longer in use
+- **Faulty**: Device has technical issues
+
+### Step 1: Update Device Status
+
+1. **Device List**: Navigate to device list
+2. **Status Dropdown**: Click status dropdown for the device
+3. **Select Status**: Choose new status from options
+4. **Save Status**: Click "Update Status" button
+
+### Step 2: Status-Specific Actions
+
+1. **Active Status**:
+
+   - Enable transaction processing
+   - Activate monitoring
+   - Enable remote access
+
+2. **Inactive Status**:
+
+   - Disable transaction processing
+   - Maintain monitoring
+   - Preserve device data
+
+3. **Maintenance Status**:
+
+   - Disable transactions
+   - Enable maintenance mode
+   - Log maintenance activities
+
+4. **Retired Status**:
+   - Disable all functions
+   - Archive device data
+   - Remove from active inventory
 
 ## Device Monitoring
 
@@ -76,21 +198,43 @@ Device management is a critical component that handles the registration, monitor
 
 ### Device Details View
 
-1. **Basic Information**: Device ID, type, model, serial number
-2. **Location Information**: Physical address and coordinates
-3. **Merchant Information**: Associated merchant details
-4. **Technical Specifications**: Hardware and software details
-5. **Transaction History**: Device transaction records
-6. **Maintenance History**: Device maintenance and repair records
+1. **Basic Information**: Device ID, name, brand, model, serial number
+2. **Pricing Information**: Min/max prices, rental/purchase costs
+3. **Location Information**: Physical address and coordinates
+4. **Merchant Information**: Associated merchant details
+5. **Technical Specifications**: Hardware and software details
+6. **Transaction History**: Device transaction records
+7. **Maintenance History**: Device maintenance and repair records
+8. **Media Gallery**: Device images and documents
 
 ### Device Actions
 
 - **View Details**: Access complete device information
-- **Edit Configuration**: Modify device settings
+- **Edit Device**: Modify device settings and information
+- **Update Status**: Change device status
+- **Upload Media**: Add device images and documents
 - **Remote Control**: Perform remote device operations
 - **Firmware Update**: Update device firmware
 - **Restart Device**: Remotely restart device
 - **Deactivate Device**: Temporarily disable device
+
+## Device Search and Filtering
+
+### Search Options
+
+- **By Name**: Search using device name
+- **By Brand**: Search by device brand
+- **By Serial Number**: Search using device serial number
+- **By Merchant**: Search devices by assigned merchant
+
+### Filter Options
+
+- **Status**: Active, inactive, maintenance, retired, faulty
+- **Device Type**: Filter by device category
+- **Brand**: Filter by device brand
+- **Location**: Filter by geographic location
+- **Price Range**: Filter by minimum/maximum price
+- **Registration Date**: Filter by registration period
 
 ## Device Maintenance
 
@@ -144,34 +288,16 @@ Device management is a critical component that handles the registration, monitor
 - **Cost Analysis**: Device operational costs
 - **ROI Analysis**: Return on investment per device
 
-## Device Troubleshooting
-
-### Common Device Issues
-
-1. **Connectivity Problems**: Network connection issues
-2. **Payment Processing Errors**: Transaction processing failures
-3. **Hardware Malfunctions**: Physical device problems
-4. **Software Errors**: Application and firmware issues
-5. **Configuration Problems**: Device setting issues
-
-### Troubleshooting Process
-
-1. **Issue Identification**: Identify specific device problem
-2. **Diagnostic Testing**: Run device diagnostic tests
-3. **Remote Troubleshooting**: Attempt remote problem resolution
-4. **On-site Support**: Dispatch field technician if needed
-5. **Resolution Verification**: Confirm problem resolution
-6. **Documentation**: Document troubleshooting steps
-
 ## Device Reporting
 
 ### Device Reports
 
-- **Device Inventory Report**: Complete device listing
+- **Device Inventory Report**: Complete device listing with pricing
 - **Performance Report**: Device performance analysis
 - **Maintenance Report**: Maintenance history and schedules
 - **Security Report**: Device security status
 - **Utilization Report**: Device usage statistics
+- **Pricing Report**: Device pricing analysis
 
 ### Export Options
 
